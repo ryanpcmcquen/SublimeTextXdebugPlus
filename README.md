@@ -1,4 +1,18 @@
-# SublimeTextXdebug
+# SublimeTextXdebugPlus
+
+A continuation of: https://github.com/martomo/SublimeTextXdebug
+
+### Why is this necessary?
+
+I greatly appreciate the work of [martomo](https://github.com/martomo),
+but the current [SublimeTextXdebug package](https://github.com/martomo/SublimeTextXdebug) is broken, and only works
+with older versions of Xdebug. There were a lot of great and
+ignored pull requests against the `martomo` repo, which
+have been merged here. Any with merge conflicts are
+actively being worked on being resolved.
+
+-----
+
 Xdebug debugger client integration for Sublime Text.
 
 ![SublimeTextXdebug](http://i.imgur.com/2FGYW3P.png)
@@ -110,97 +124,97 @@ For details about all available settings for configuring Xdebug, see [here](http
 ## Configuration
 The following settings can be configured in Xdebug.sublime-settings or in \*.sublime-project files:
 
-*__path_mapping__*  
+*__path_mapping__*
 For remote debugging to resolve the file locations it is required to configure the path mapping with the server path as key and local path as value.
 
-*__url__*  
+*__url__*
 Determine which URL to launch in the default web browser when starting/stopping a session.
 
-*__ide_key__*  
+*__ide_key__*
 An IDE key is used to identify with debugger engine when Sublime Text will start or stop a debugging session.
 
 _This package does not filter sessions by IDE key, it will accept any IDE key, also ones that do not match this configured IDE key. It is merely used when launching the default web browser with the configured URL._
 
-*__host__*  
+*__host__*
 Host address of network interface which Sublime Text should listen to connect with debugger engine.
 
 _When specifying host address of network interface, be sure to specify an IPv4 address as Sublime Text will listen for connections through an IPv4 socket._
 
-*__port__*  
-Which port number Sublime Text should listen to connect with debugger engine.  
+*__port__*
+Which port number Sublime Text should listen to connect with debugger engine.
 
-*__max_children__*  
-Maximum amount of array children and object's properties to return.  
+*__max_children__*
+Maximum amount of array children and object's properties to return.
 
-*__max_data__*  
-Maximum amount of variable data to initially retrieve.  
+*__max_data__*
+Maximum amount of variable data to initially retrieve.
 
-*__max_depth__*  
-Maximum amount of nested levels to retrieve of array elements and object properties.  
+*__max_depth__*
+Maximum amount of nested levels to retrieve of array elements and object properties.
 
-*__break_on_start__*  
-Break at first line on session start, when debugger engine has connected.  
+*__break_on_start__*
+Break at first line on session start, when debugger engine has connected.
 
-*__break_on_exception__*  
-Break on exceptions, suspend execution when the exception name matches an entry in this list value.  
+*__break_on_exception__*
+Break on exceptions, suspend execution when the exception name matches an entry in this list value.
 
-*__close_on_stop__*  
-Always close debug windows and restore layout on session stop.  
+*__close_on_stop__*
+Always close debug windows and restore layout on session stop.
 
-*__super_globals__*  
-Show information about super globals in context view.  
+*__super_globals__*
+Show information about super globals in context view.
 
-*__fullname_property__*  
-Display property by fullname in context view.  
+*__fullname_property__*
+Display property by fullname in context view.
 
-*__hide_password__*  
-Do not show possible password values in context view.  
+*__hide_password__*
+Do not show possible password values in context view.
 
-*__pretty_output__*  
-Render evaluated result as parsed output instead of raw XML.  
+*__pretty_output__*
+Render evaluated result as parsed output instead of raw XML.
 
-*__launch_browser__*  
+*__launch_browser__*
 Always launch browser on session start/stop.
 
-*This will only work if you have the '__url__' setting configured.*  
+*This will only work if you have the '__url__' setting configured.*
 
-*__browser_no_execute__*  
-When launching browser on session stop do not execute script.  
-By using parameter XDEBUG_SESSION_STOP_NO_EXEC instead of XDEBUG_SESSION_STOP.  
+*__browser_no_execute__*
+When launching browser on session stop do not execute script.
+By using parameter XDEBUG_SESSION_STOP_NO_EXEC instead of XDEBUG_SESSION_STOP.
 
-*__disable_layout__*  
+*__disable_layout__*
 Do not use the debugging window layout.
 
-*__debug_layout__*  
-Window layout that is being used when debugging.  
+*__debug_layout__*
+Window layout that is being used when debugging.
 
-*__breakpoint_group__*  
-*__breakpoint_index__*  
-*__context_group__*  
-*__context_index__*  
-*__stack_group__*  
-*__stack_index__*  
-*__watch_group__*  
-*__watch_index__*  
-Group and index positions for debug views.  
+*__breakpoint_group__*
+*__breakpoint_index__*
+*__context_group__*
+*__context_index__*
+*__stack_group__*
+*__stack_index__*
+*__watch_group__*
+*__watch_index__*
+Group and index positions for debug views.
 
-*__breakpoint_enabled__*  
-*__breakpoint_disabled__*  
-*__breakpoint_current__*  
-*__current_line__*  
+*__breakpoint_enabled__*
+*__breakpoint_disabled__*
+*__breakpoint_current__*
+*__current_line__*
 Custom gutter icons for indicating current line or enabled/disabled breakpoints.
 
 _Do not use same icon for above values, because Sublime Text is unable to use the same icon for different scopes, in case there are duplicate icons detected it will fall back to the corresponding icon in the package._
 
-*__python_path__*  
-Path to Python installation on your system.  
-Which is being used to load missing modules.  
+*__python_path__*
+Path to Python installation on your system.
+Which is being used to load missing modules.
 
-*__debug__*  
-Show detailed log information about communication between debugger engine and Sublime Text.  
-  
+*__debug__*
+Show detailed log information about communication between debugger engine and Sublime Text.
+
 ---
-  
+
 Below are examples how to configure your Xdebug.sublime-settings and \*.sublime-project files.
 
 __Xdebug.sublime-settings__
@@ -270,16 +284,16 @@ export XDEBUG_CONFIG="idekey=sublime.xdebug"
 php myscript.php
 ```
 
-Make sure before defining the environment variable you have switched to the proper user environment.  
+Make sure before defining the environment variable you have switched to the proper user environment.
 As example you would set the environment variable as __guest__ and execute the script as __root__ _(sudo)_, then __root__ will not have the environment variable XDEBUG_CONFIG that was defined by __guest__.
 
 #### How do I set a breakpoint and/or watch expression?
-With SublimeTextXdebug you can easily [add/remove breakpoints](#breakpoints), which are send on session start.  
-Or [set/edit/remove watch expressions](#watch-expressions), that are evaluated in the current execution context.  
+With SublimeTextXdebug you can easily [add/remove breakpoints](#breakpoints), which are send on session start.
+Or [set/edit/remove watch expressions](#watch-expressions), that are evaluated in the current execution context.
 
 Setting a conditional breakpoints or watch expressions is quite easy, it is like an __if__ statement in PHP.
 
-As example you only want to stop on breakpoint when value of __$number__ is equal to __13__, then your __Breakpoint condition__ would be `$number==13`.  
+As example you only want to stop on breakpoint when value of __$number__ is equal to __13__, then your __Breakpoint condition__ would be `$number==13`.
 Another example would be when you would like to know the value of __$item['image']__ on each break, then your __Watch expression__ would be `$item['image']`.
 
 Another way is to set the breakpoint in your PHP code with the following function [`xdebug_break()`](http://xdebug.org/docs/remote#xdebug_break).
@@ -296,7 +310,7 @@ By default the execution of a debugging session is suspended on each of the foll
 * __"Xdebug"__
 * __"Unknown error"__
 
-In order to specify which exception names to suspend the execution of a debugging session, configure the `break_on_exception` setting with a list of the specific exception names by choice from the list shown above.  
+In order to specify which exception names to suspend the execution of a debugging session, configure the `break_on_exception` setting with a list of the specific exception names by choice from the list shown above.
 
 It is also possible to specify custom exceptions instead of __all__ exceptions (__"Fatal error"__). For example if you would configure __"MissingArgumentException"__ instead of __"Fatal error"__, it would not break on __"InvalidParameterException"__.
 
@@ -310,7 +324,7 @@ Further customizing can be done by assigning the Xdebug views to a group/index w
 Or you can disable the debugging layout by setting `disable_layout: true`, which will open all Xdebug views in current active group/window on session start and does not change your layout.
 
 #### How to solve `ImportError`?
-Older versions of Sublime Text do not come with Python bundled and rely on your Python system installation.  
+Older versions of Sublime Text do not come with Python bundled and rely on your Python system installation.
 Some systems do not include specific modules which are required by this package, such as __pyexpat__.
 
 Configure the `python_path` setting to the path of your Python installation on your system which is either newer or has all required modules. For example: `"python_path" : "/usr/lib/python2.7"`.
