@@ -134,7 +134,7 @@ class Protocol(object):
                     if text[1:-1] == 'amp' or text[1:-1] == 'gt' or text[1:-1] == 'lt':
                         pass
                     elif text[1:-1] == 'quot':
-                        text = "'"
+                        text = str("'")
                     else:
                         text = H.unicode_chr(name2codepoint[text[1:-1]])
                 except KeyError:
