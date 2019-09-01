@@ -355,7 +355,7 @@ SublimeTextXdebug is released under the [MIT License][license-link].
 
 [travis-badge]: https://travis-ci.org/ryanpcmcquen/SublimeTextXdebugPlus.svg?branch=master
 [travis-link]: https://travis-ci.org/ryanpcmcquen/SublimeTextXdebugPlus
-[package-control-badge]: https://img.shields.io/packagecontrol/dt/Xdebug%20Client.svg
-[package-control-link]: https://packagecontrol.io/packages/Xdebug%20Client
+[package-control-badge]: https://img.shields.io/packagecontrol/dt/Xdebug%20Client%20Plus.svg
+[package-control-link]: https://packagecontrol.io/packages/Xdebug%20Client%20Plus
 [license-badge]: https://img.shields.io/badge/license-MIT-007EC7.svg
 [license-link]: LICENSE
