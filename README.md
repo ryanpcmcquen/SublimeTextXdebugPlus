@@ -93,11 +93,11 @@ Search in the list and install package `Xdebug Client`.
 Clone the repository by executing the following command in your Packages directory:
 
 ```bash
-git clone https://github.com/martomo/SublimeTextXdebug.git "Xdebug Client"
+git clone https://github.com/ryanpcmcquen/SublimeTextXdebugPlus.git "Xdebug Client Plus"
 ```
 
 #### Download
-Get the latest [source from GitHub](https://github.com/martomo/SublimeTextXdebug/archive/master.zip) and extract the source into your Packages directory.
+Get the latest [source from GitHub](https://github.com/ryanpcmcquen/SublimeTextXdebugPlus/archive/master.zip) and extract the source into your Packages directory.
 
 
 *__Note:__ You can locate your Packages directory in the menu under* `Preferences / Browse Packages...`
@@ -258,7 +258,7 @@ __\*.sublime-project__
 
 ## Troubleshoot
 
-#### Can I have both [SublimeTextXdebug](https://github.com/martomo/SublimeTextXdebug) and [SublimeXdebug](https://github.com/Kindari/SublimeXdebug) installed?
+#### Can I have both [SublimeTextXdebug](https://github.com/ryanpcmcquen/SublimeTextXdebugPlus) and [SublimeXdebug](https://github.com/Kindari/SublimeXdebug) installed?
 No. Having installed both packages can cause conflicts, because they might both listen to the same port for a debugger engine response and have similar keymapping.
 
 However (project) settings from SublimeXdebug are compatible with SublimeTextXdebug.
@@ -339,13 +339,13 @@ First check following _possible_ solutions that could resolve any issues:
 - Lower the `max_data`/`max_depth`/`max_children` settings to increase response speed or prevent crashing, Xdebug could return to much data to process.
 - Change permissions for Sublime Text and it's packages on your filesystem, Sublime Text or package might not have valid rights.
 
-Do you still experience any issues, then [create an issue](https://github.com/martomo/SublimeTextXdebug/issues/new) including the following data:
+Do you still experience any issues, then [create an issue](https://github.com/ryanpcmcquen/SublimeTextXdebugPlus/issues/new) including the following data:
 
 - What operating system(s) and version of Sublime Text are you using?
-- How did you [install](https://github.com/martomo/SublimeTextXdebug#installation) SublimeTextXdebug, Package Control, git clone or download?
+- How did you [install](https://github.com/ryanpcmcquen/SublimeTextXdebugPlus#installation) SublimeTextXdebug, Package Control, git clone or download?
 - Are you trying to debug the script remotely or locally, through browser or command line?
 - Which version of Xdebug extension do you have?
-- Can you post your [project/settings file](https://github.com/martomo/SublimeTextXdebug#configuration) and [Xdebug configuration](https://github.com/martomo/SublimeTextXdebug#xdebug) from the \*.ini located on your server.
+- Can you post your [project/settings file](https://github.com/ryanpcmcquen/SublimeTextXdebugPlus#configuration) and [Xdebug configuration](https://github.com/ryanpcmcquen/SublimeTextXdebugPlus#xdebug) from the \*.ini located on your server.
 - Does the console window (<kbd>Ctrl+\`</kbd>) show any more information regarding the error?
 
 ## License
@@ -353,8 +353,8 @@ Do you still experience any issues, then [create an issue](https://github.com/ma
 SublimeTextXdebug is released under the [MIT License][license-link].
 
 
-[travis-badge]: https://travis-ci.org/martomo/SublimeTextXdebug.svg?branch=master
-[travis-link]: https://travis-ci.org/martomo/SublimeTextXdebug
+[travis-badge]: https://travis-ci.org/ryanpcmcquen/SublimeTextXdebugPlus.svg?branch=master
+[travis-link]: https://travis-ci.org/ryanpcmcquen/SublimeTextXdebugPlus
 [package-control-badge]: https://img.shields.io/packagecontrol/dt/Xdebug%20Client.svg
 [package-control-link]: https://packagecontrol.io/packages/Xdebug%20Client
 [license-badge]: https://img.shields.io/badge/license-MIT-007EC7.svg
