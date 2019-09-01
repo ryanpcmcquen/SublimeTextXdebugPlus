@@ -11,4 +11,4 @@ python:
 install:
   - "pip install flake8 flake8-quotes"
 script:
-  - flake8 .
+  - flake8 --verbose .
