@@ -37,7 +37,7 @@ Based on the Xdebug protocol functionality in [SublimeXdebug](https://github.com
 * Overview of breakpoints in all files and disable/enable breakpoints with simple click
 * Evaluate code within the current execution context, by setting watch expressions
 * Inspect (nested) context variables
-* Works on both Sublime Text 2 __and__ 3
+* Works with Sublime Text 3.
 
 ## Commands
 Here is a complete list of commands you can find Command Palette under the `Xdebug` namespace or in the menu under `Tools / Xdebug`:
