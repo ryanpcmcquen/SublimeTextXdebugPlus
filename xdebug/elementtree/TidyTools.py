@@ -123,6 +123,7 @@ def getzonebody(file, **options):
 if __name__ == "__main__":
 
     import sys
-    for arg in sys.argv[1:]:
-        for file in glob.glob(arg):
-            print file, "...", tidy(file)
+    if len(sys.argv) > 1:
+        for arg in sys.argv[1:]:
+            for file in glob.glob(arg):
+                print file, "...", tidy(file)
