@@ -9,6 +9,6 @@ python:
   # Sublime Text 3.0 Build 3143/3156
   - "3.3"
 install:
-  - "pip install 'flake8=3.6.0' flake8-quotes"
+  - "pip install 'flake8==3.6.0' flake8-quotes"
 script:
   - flake8 --verbose .
