@@ -4,12 +4,12 @@ A continuation of: https://github.com/martomo/SublimeTextXdebug
 
 ### Why is this necessary?
 
-I greatly appreciate the work of [martomo](https://github.com/martomo),
+~I greatly appreciate the work of [martomo](https://github.com/martomo),
 but the current [SublimeTextXdebug package](https://github.com/martomo/SublimeTextXdebug) is broken, and only works
 with older versions of Xdebug. There were a lot of great and
 ignored pull requests against the `martomo` repo, which
 have been merged here. Any with merge conflicts are
-actively being worked on being resolved.
+actively being worked on being resolved.~
 
 -----
 
