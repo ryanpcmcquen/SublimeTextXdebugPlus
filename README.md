@@ -1,6 +1,8 @@
-# SublimeTextXdebugPlus
+# ABANDONED
 
-A continuation of: https://github.com/martomo/SublimeTextXdebug
+The whole point of this package was to allow use of newer versions of Xdebug, but @martomo stepped up and fixed his original package, so there really is no sense in keeping this one around.
+
+~A continuation of: https://github.com/martomo/SublimeTextXdebug~
 
 ### Why is this necessary?
 
